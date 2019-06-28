@@ -1,0 +1,30 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>
+      Biezy
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding style="background-image: linear-gradient(to bottom, #e04fc8 0%, #ff2020 100%) !important;">
+ <div style="text-align: center; padding-top: 40px">
+   <img src="../../assets/imgs/chat.svg" width="100px" height="100px">
+ </div>
+
+    <ion-item style="background: transparent">
+      <ion-label floating style="text-emphasis: none;letter-spacing: 0.0625em;;color:rgb(255, 255, 255); font-size: 30px ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter">Username</ion-label>
+      <ion-input type="text" [(ngModel)]= "username" style="color: rgb(0, 0, 0); font-size: 30px"></ion-input>
+    </ion-item>
+
+    <ion-item style="background: transparent">
+      <ion-label floating style="text-emphasis: none;letter-spacing: 0.0625em;;color:rgb(255, 255, 255); font-size: 30px ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter">Password</ion-label>
+      <ion-input type="password" [(ngModel)]= "password" style="color: rgb(0, 0, 0); font-size: 30px"></ion-input>
+    </ion-item>
+
+     <button ion-button block large  (click)= "loginUser()" style="margin-top: 20px;border-radius: 7px;background-color: rgba(255, 255, 255, 0.808); color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter">Login</button>
+
+
+
+       <p style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">PASSWORD: sas22</p>
+
+      </ion-content>
